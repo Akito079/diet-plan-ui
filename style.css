@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container-fluid {
+    @apply container mx-auto px-10 py-3;
+  }
+  .btn-black {
+    @apply bg-black  text-white px-3 py-2 rounded-2xl;
+  }
+  .btn-secondary {
+    @apply px-3 py-2 bg-gray-500 text-white rounded-2xl ;
+  }
+  
+}
