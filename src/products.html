@@ -1,84 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
-  <!-- link to google icons -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-  />
-  <!-- link to google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Rubik+Iso&family=Sora:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <!-- fontawesome links -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-</head>
-<body class="font-sora">
-  <main>
-    <!-- nav section starts here -->
-    <nav class="ring-1 ring-slate-900/5 shadow-lg">
-      <div class="container-fluid flex items-center justify-between">
-        <!-- left nav-flex-item starts here -->
-        <div class="font-bold">DIET PLAN</div>
-        <!-- left nav-flex-item ends here -->
-        <!-- right nav-item starts here -->
-        <div class="hidden md:block">
-          <ul class="flex items-center gap-5">
-            <a href="./index.html">
-              <li class="font-bold">Home</li>
-            </a>
-            <a href="./src/products.html">
-              <li>Products</li>
-            </a>
-            <a href="./src/aboutus.html">
-              <li>About us</li>
-            </a>
-            <a href="./src/contact.html">
-              <li>Contact Us</li>
-            </a>
-            <a href="">
-              <li>
-                <span class="material-symbols-outlined">
-                  account_circle
-                </span>
-              </li>
-            </a>
-            <a href="">
-              <li>
-                <span class="material-symbols-outlined">
-                  notifications_active
-                </span>
-              </li>
-            </a>
-            <a href="">
-              <li>
-                <span class="material-symbols-outlined"> shopping_cart </span>
-              </li>
-            </a>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <!-- link to google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Rubik+Iso&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="font-sora">
+    <main>
+      <!-- nav section starts here -->
+      <nav class="ring-1 ring-slate-900/5 shadow-lg">
+        <div class="container-fluid flex items-center justify-between">
+          <!-- left nav-flex-item starts here -->
+          <div class="font-bold">DIET PLAN</div>
+          <!-- left nav-flex-item ends here -->
+          <!-- right nav-item starts here -->
+          <div class="hidden md:block">
+            <ul class="flex items-center gap-5">
+              <a href="/">
+                <li class="font-bold">Home</li>
+              </a>
+              <a href="./src/products.html">
+                <li>Products</li>
+              </a>
+              <a href="./src/aboutus.html">
+                <li>About us</li>
+              </a>
+              <a href="./src/contact.html">
+                <li>Contact Us</li>
+              </a>
+              <a href="">
+                <li>
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <span class="material-symbols-outlined">
+                    notifications_active
+                  </span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <span class="material-symbols-outlined"> shopping_cart </span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <!-- right nav-item ends here -->
+          <!-- resp humburger menu starts -->
+          <div class="md:hidden flex justify-center items-center">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+          <!-- resp humburger menu starts -->
         </div>
-        <!-- right nav-item ends here -->
-        <!-- resp humburger menu starts -->
-        <div class="md:hidden flex justify-center items-center">
-          <span class="material-symbols-outlined"> menu </span>
+      </nav>
+      <!-- nav section ends here -->
+      <!-- welcome to diet plan section starts here -->
+      <section
+        class="bg-pineapple max-w-full min-h-[600px] flex items-center justify-center bg-no-repeat bg-center bg-cover"
+      >
+        <div class="container-fluid">
+          <div class="text-center">
+            <h3 class="text-4xl sm:text-5xl font-bold">Wecome to Diet Plan</h3>
+            <p class="text-gray-500">Home/Products</p>
+          </div>
         </div>
-        <!-- resp humburger menu starts -->
-      </div>
-    </nav>
-    <!-- nav section ends here -->
-  </main>
-</body>
-<script type="module" src="/main.js"></script>
+      </section>
+      <!-- welcome to diet plan section ends here -->
+      <!-- set menus section starts now -->
+      <section>
+        <div class="container-fluid">
+          <div
+            class="grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-5 my-20"
+          >
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300  bg-emerald-100 rounded-2xl overflow-hidden relative z-10 p-5"
+            >
+              <div class="space-y-3">
+                <h3 class="text-3xl font-bold">Special set</h3>
+                <p
+                  class="text-gray-600 font-medium max-w-[150px] sm:max-w-[250px] md:max-w-[200px]"
+                >
+                  A healthy balanced diet plan to individual health goals.
+                </p>
+                <button class="px-5 py-2 rounded-2xl hover:bg-emerald-300 hover:text-gray-50  bg-black text-gray-300">
+                  Start Now
+                </button>
+              </div>
+              <div class="-z-10 absolute bottom-0 -right-16">
+                <img src="../assets/special-set.png" class="h-[154px]" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300 bg-rose-100 rounded-2xl overflow-hidden relative z-10 p-5"
+            >
+              <div class="space-y-3">
+                <h3 class="text-3xl font-bold">Fresh Juices</h3>
+                <p
+                  class="text-gray-600 font-medium max-w-[150px] sm:max-w-[250px] md:max-w-[200px]"
+                >
+                  Tailored fresh juices blends fo a quick and nutritious boost.
+                </p>
+                <button class="px-5 py-2 rounded-2xl hover:bg-rose-300 hover:text-gray-50 bg-black text-gray-300">
+                  Start Now
+                </button>
+              </div>
+              <div class="-z-10 absolute bottom-0 right-0">
+                <img src="../assets/fresh-juice.png" class="h-[154px]" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300 bg-yellow-100 rounded-2xl overflow-hidden relative z-10 p-5"
+            >
+              <div class="space-y-3">
+                <h3 class="text-3xl font-bold">Custom Set</h3>
+                <p
+                  class="text-gray-600 font-medium max-w-[150px] sm:max-w-[250px] md:max-w-[200px]"
+                >
+                  We offer uniquely to meet your beauty and health needs
+                </p>
+                <button class="px-5 py-2 rounded-2xl hover:bg-yellow-300 hover:text-gray-50 bg-black text-gray-300">
+                  Start Now
+                </button>
+              </div>
+              <div class="-z-10 absolute bottom-0 right-0">
+                <img src="../assets/custom set.png" class="h-[154px]" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- set menu section ends now -->
+      <!-- special set section starts here -->
+      <section class="my-20">
+        <div class="container-fluid">
+          <!-- search bar section starts here -->
+          <div class="grid grid-cols-6">
+            <div class="col-span-6 lg:col-span-3 py-5 relative">
+              <label
+                for=""
+                class="absolute top-1/2 -translate-y-1/2 left-2 flex items-center"
+                ><span class="material-symbols-outlined"> search </span></label
+              >
+              <input
+                type="search"
+                class="ring-2 ring-black sm:w-96 outline-none rounded-2xl px-10 py-2"
+                placeholder="Search"
+                name=""
+                id=""
+              />
+            </div>
+            <div
+              class="col-span-6 lg:col-span-3 flex flex-col sm:flex-row sm:items-center justify-center items-start lg:justify-end gap-3 py-5"
+            >
+              <button
+                class="px-5 py-2 ring-2 ring-black group hover-btn-white    bg-white rounded-2xl font-semibold"
+              >
+                Show : <span class="text-gray-500 group-hover:text-gray-300 font-medium">1 of 5</span>
+              </button>
+              <button
+                class="px-5 py-2 ring-2 ring-black group hover-btn-white  bg-white rounded-2xl font-semibold"
+              >
+                Sort By : <span class="text-gray-500 group-hover:text-gray-300 font-medium">Newest</span>
+              </button>
+              <button
+                class="px-5 py-2 ring-2 ring-black hover-btn-white bg-white rounded-2xl flex items-center font-semibold"
+              >
+                <span class="material-symbols-outlined"> filter_alt </span>
+                Filter
+              </button>
+            </div>
+          </div>
+          <!-- search bar section ends here -->
+          <!-- section header starts here -->
+          <div
+            class="flex flex-col md:flex-row md:items-center justify-between my-5"
+          >
+            <div
+              class="basis-1/2 relative before:absolute before:-left-2 before:top-0 before:content-[''] before:block before:w-1 before:h-[2.3rem] before:bg-black"
+            >
+              <h1 class="text-2xl sm:text-4xl font-bold">Speacial Set</h1>
+              <p class="text-[#493B4E] mt-3 tracking-wide">
+                Your unique diet plan,crafted for your health and taste
+                preferences and personalized approach to wellness.
+              </p>
+            </div>
+            <div class="my-10">
+              <button
+                class="px-10 py-3 hover-btn-black bg-black text-gray-300 rounded-xl"
+              >
+                See More
+              </button>
+            </div>
+          </div>
+          <!-- section header ends here -->
+          <!-- set menus cards section starts -->
+          <div
+            class="grid sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 space-y-24 md:gap-[6rem] lg:gap-10"
+            id="card-container"
+          >
+            <template class="card">
+              <div class="px-4 col-span-4  hover:scale-105 transition-transform duration-300 bg-black rounded-2xl">
+                <div class="relative tag">
+                  <div class="-mt-16">
+                    <img src="" class="w-36 h-36" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col mt-5 gap-8">
+                  <h3 class="text-2xl text-white font-bold"></h3>
+                  <div class="">
+                    <div class="flex items-center">
+                      <div class="stars flex items-center"></div>
+                      <span class="rating tracking-wide text-gray-300"> </span>
+                      <span class="review text-gray-300"></span>
+                    </div>
+                  </div>
+                  <p class="text-gray-300"></p>
+                  <div class="flex justify-between items-center">
+                    <span class="price text-white text-2xl font-bold"></span>
+                    <span
+                      class="available text-white text-2xl font-bold"
+                    ></span>
+                  </div>
+                  <button
+                    class="text-center mb-5 py-3 rounded-xl font-medium hover:bg-gray-500 hover:text-white transition-colors duration-300 bg-white"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </template>
+          </div>
+          <!-- set menus cards section ends -->
+        </div>
+      </section>
+      <!-- speacial set section ends here -->
+      <!-- juices section starts here -->
+      <section class="my-20">
+        <div class="container-fluid">
+          <!-- seection header starts here -->
+          <div class="flex flex-col md:flex-row md:items-center justify-between">
+            <div
+              class="basis-1/2 relative before:absolute before:-left-2 before:top-0 before:content-[''] before:block before:w-1 before:h-[2.3rem] before:bg-black"
+            >
+              <h1 class="text-2xl sm:text-4xl font-bold">Fresh Juices</h1>
+              <p class="text-[#493B4E] mt-3 tracking-wide">
+                Savor the goodness or a custom blend designed just for
+                you,packed with nutrients and freshness to investigate your
+                health.
+              </p>
+            </div>
+            <div class="my-10">
+              <span
+                class="material-symbols-outlined bg-black rounded-lg text-white p-3"
+              >
+                arrow_back_ios
+              </span>
+              <span
+                class="material-symbols-outlined bg-black rounded-lg text-white p-3"
+              >
+                arrow_forward_ios
+              </span>
+            </div>
+          </div>
+          <!-- section header ends here -->
+          <!-- set menus cards section starts -->
+          <div
+            class="grid sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 space-y-28 md:gap-[6rem] lg:gap-10"
+            id="juice-container"
+          >
+            <template class="card">
+              <div class="px-4 col-span-4 bg-black rounded-2xl">
+                <div class="relative tag">
+                  <div class="-mt-16">
+                    <img src="" class="w-36 h-36" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col mt-5 gap-8">
+                  <h3 class="text-2xl text-white font-bold"></h3>
+                  <div class="">
+                    <div class="flex items-center">
+                      <div class="stars flex items-center"></div>
+                      <span class="rating tracking-wide text-gray-300"> </span>
+                      <span class="review text-gray-300"></span>
+                    </div>
+                  </div>
+                  <p class="text-gray-300"></p>
+                  <div class="flex justify-between items-center">
+                    <span class="price text-white text-2xl font-bold"></span>
+                    <span
+                      class="available text-white text-2xl font-bold"
+                    ></span>
+                  </div>
+                  <button
+                    class="text-center mb-5 py-3 rounded-xl font-medium hover:bg-gray-500 hover:text-white transition-colors duration-300 bg-white"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </template>
+          </div>
+
+          <!-- set menus cards section ends -->
+        </div>
+      </section>
+      <!-- juices setion ends here -->
+      <!-- make your own creation secton starts here -->
+      <section
+        class="flex items-start lg:items-center bg-no-repeat bg-center bg-cover"
+      >
+        <div class="container-fluid">
+          <div
+            class="rounded-2xl p-5 bg-yellow-100 overflow-hidden grid grid-cols-6 lg:grid-cols-12"
+          >
+            <div class="col-span-6">
+              <img
+                src="../assets/customer-set.png"
+                class="max-h-[377px]"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col justify-center gap-5 relative col-span-6">
+              <div class="flex items-center">
+                <h3 class="font-dancing-script text-3xl font-bold">
+                  Create Special
+                </h3>
+                <div class="w-12 h-[1.5px] bg-black ml-2"></div>
+              </div>
+              <h3 class="text-4xl sm:text-4xl lg:text-5xl font-bold">
+                Make your own <br class="hidden md:block" />Creation Special Set
+              </h3>
+              <p class="max-w-[400px] text-gray-500 font-bold">
+                Energize with our nutritious healthy salad,bursting with fresh
+                green and vibrant superfoods
+              </p>
+              <button class="w-48 bg-black hover-btn-black text-gray-300 py-2 rounded-xl">
+                CREATE SET
+              </button>
+              <div class="absolute -bottom-20 -right-20">
+                <img
+                  src="../assets/johanna-IKaFDABbfFY-unsplash 1.png"
+                  class="h-[200px]"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- make your own creation section ends here -->
+      <!-- daily best sale section starts here -->
+      <section class="my-20">
+        <div class="container-fluid">
+          <!-- seection header starts here -->
+          <div class="flex flex-col md:flex-row md:items-center justify-between">
+            <div
+              class="basis-1/2 relative before:absolute before:-left-2 before:top-0 before:content-[''] before:block before:w-1 before:h-[2.3rem] before:bg-black"
+            >
+              <h1 class="text-2xl sm:text-4xl font-bold">Dail Best Sale</h1>
+              <p class="text-[#493B4E] mt-3 tracking-wide">
+                We offer a wide range of high-quality products and services
+                tailored to meet the diverse needs and preferences of our
+                customers.
+              </p>
+            </div>
+            <div class="my-10">
+              <span
+                class="material-symbols-outlined bg-black rounded-lg text-white p-3"
+              >
+                arrow_back_ios
+              </span>
+              <span
+                class="material-symbols-outlined bg-black rounded-lg text-white p-3"
+              >
+                arrow_forward_ios
+              </span>
+            </div>
+          </div>
+          <!-- section header ends here -->
+          <!-- set menus cards section starts -->
+          <div
+            class="grid sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 space-y-28 md:gap-[6rem] lg:gap-10"
+            id="bestSale-container"
+          >
+            <template class="card">
+              <div class="px-4 col-span-4 bg-black rounded-2xl">
+                <div class="relative tag">
+                  <div class="-mt-16">
+                    <img src="" class="w-36 h-36" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col mt-5 gap-8">
+                  <h3 class="text-2xl text-white font-bold"></h3>
+                  <div class="">
+                    <div class="flex items-center">
+                      <div class="stars flex items-center"></div>
+                      <span class="rating tracking-wide text-gray-300"> </span>
+                      <span class="review text-gray-300"></span>
+                    </div>
+                  </div>
+                  <p class="text-gray-300"></p>
+                  <div class="flex justify-between items-center">
+                    <span class="price text-white text-2xl font-bold"></span>
+                    <span
+                      class="available text-white text-2xl font-bold"
+                    ></span>
+                  </div>
+                  <button
+                    class="text-center mb-5 py-3 rounded-xl font-medium bg-white"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </template>
+          </div>
+          <!-- set menus cards section ends -->
+        </div>
+      </section>
+      <!-- daily best salee section ends here -->
+      <!-- deliver section starts here -->
+      <section>
+        <div class="container-fluid my-20">
+          <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-5">
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3 py-5 bg-gray-100 rounded-xl"
+            >
+              <img src="../assets/articulatedlorry-svgrepo-com 1.png" alt="" />
+              <div class=" ">
+                <h3 class="font-bold tetx-2xl sm:text-3xl">Free Delivery</h3>
+                <p class="text-gray-500 font-medium">+(95)987938524</p>
+              </div>
+            </div>
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3 py-5 bg-gray-100 rounded-xl"
+            >
+              <img src="../assets/herb-svgrepo-com 1.png" alt="" />
+              <div class=" ">
+                <h3 class="font-bold tetx-2xl sm:text-3xl">Message Us</h3>
+                <p class="text-gray-500 font-medium">www.mmsos.com</p>
+              </div>
+            </div>
+            <div
+              class="col-span-3 hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3 py-5 bg-gray-100 rounded-xl"
+            >
+              <img src="../assets/creditcard-svgrepo-com 1.png" alt="" />
+              <div class=" ">
+                <h3 class="font-bold tetx-2xl sm:text-3xl">Located In</h3>
+                <p class="text-gray-500 font-medium">Yangon,Myanmar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- deliver section ends here -->
+      <!-- footersection starts here -->
+      <section class="bg-black">
+        <div class="container-fluid">
+          <div
+            class="grid sm:grid-cols-4 my-20 md:grid-cols-8 lg:grid-cols-12 gap-6"
+          >
+            <div class="col-span-4 lg:col-span-6 leading-relaxed">
+              <h3 class="text-3xl text-gray-300">DIET PLAN</h3>
+              <p class="max-w-[450px] text-gray-500 my-2">
+                Our comprehensive diet plan is designed to optimize your
+                nutrition and support your health goals,ensuring a balanced and
+                sustainable approach to eating
+              </p>
+            </div>
+            <div class="col-span-4 lg:col-span-2">
+              <h3 class="text-gray-300">PRODUCT</h3>
+              <ul class="space-y-2" id="product-container">
+                <template class="product-item">
+                  <li class="products text-gray-500 hover:text-gray-300 hover:scale-105 transition-colors duration-300"></li>
+                </template>
+              </ul>
+            </div>
+            <div class="col-span-4 lg:col-span-2">
+              <h3 class="text-gray-300">About</h3>
+              <ul class="space-y-2" id="about-container">
+                <template class="about-item">
+                  <li class="abouts text-gray-500 hover:text-gray-300 hover:scale-105 transition-colors duration-300"></li>
+                </template>
+              </ul>
+            </div>
+            <div class="col-span-4 lg:col-span-2">
+              <h3 class="text-gray-300">Contact</h3>
+              <ul class="space-y-2" id="">
+                <li class="mt-2 text-gray-500 hover:text-gray-300 hover:scale-105 transition-colors duration-300">MMS IT</li>
+                <li class="text-gray-500 hover:text-gray-300 hover:scale-105 transition-colors duration-300">0925015208</li>
+                <li class="text-gray-500 hover:text-gray-300 hover:scale-105 transition-colors duration-300">Shan kone Street</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center py-5"
+          >
+            <div class="text-gray-500">
+              &copy;2023-MMSIT | All rights reserved
+            </div>
+            <div class="text-gray-500">MMSIT BUD</div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section ends here -->
+    </main>
+  </body>
+  <script type="module" src="/main.js"></script>
+  <script src="/src/scripts/specialset.js"></script>
+  <script src="/src/scripts/juice.js"></script>
+  <script src="/src/scripts/bestsale.js"></script>
+  <script src="/src/scripts/footerlist.js"></script>
 </html>
